@@ -58,17 +58,17 @@
 <main id="main" class="doc">
   <p class="crumb"><a href="/">Planetbind</a> &rsaquo; <a href="/#nuralis">Nuralis</a> &rsaquo; Privacy</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 2026</p>
+  <p class="updated">Last updated: November 2026</p>
 
   <p><strong>Nuralis collects no personal data.</strong> Planetbind never receives your practice data. There is no account, no sign-in, and no
-  advertising SDK. Everything the app needs to function works with no network connection at all —
-  the only optional network activity is the anonymous usage analytics described below, which is
-  off unless you turn it on.</p>
+  advertising SDK. Everything the app needs to function works with no network connection at all.
+  The only optional network activity is the anonymous usage analytics (off unless you turn it on)
+  and, for Premium members who choose to use it, the looks marketplace — both described below.</p>
 
   <h2>What stays on your device</h2>
   <p>Everything Nuralis stores — your practice history, streaks, preferences, saved sound mixes,
   and reminder time — is saved on your device using Apple's on-device storage frameworks
-  (SwiftData and UserDefaults). Nuralis has no server of its own and no account to sign in to.</p>
+  (SwiftData and UserDefaults). Nuralis does not send any of this to a server, and there is no account to sign in to.</p>
 
   <h2>iCloud sync of your practice history</h2>
   <p>If you're signed in to iCloud, your practice history (the sessions you complete) is kept in sync
@@ -93,19 +93,50 @@
   quote text, anything you typed, or any other content. Turning the toggle off deletes that id
   immediately, and turning it back on later starts a fresh one — nothing links the two.</p>
 
+  <h2>Looks marketplace (Premium members, optional)</h2>
+  <p>Premium members can open the looks marketplace in Flow to preview, vote on and get Flow
+  looks that other members share, and to share their own. Nothing is sent unless you open it.
+  When you do, Nuralis's marketplace server (hosted by Cloudflare) stores:</p>
+  <ul>
+    <li><strong>The looks you share:</strong> the look's settings (numbers and colors) and the name
+    you give it. Shared looks are visible to other Premium members.</li>
+    <li><strong>Your votes, tries and reports:</strong> which looks you voted up or down, which
+    you downloaded, and any look you reported or creator you blocked.</li>
+    <li><strong>A random id for each device</strong> (with a hashed secret) that lets the server
+    recognize the same device again. It is not your Apple ID, your name or your email, and it is
+    not an advertising identifier.</li>
+    <li><strong>A one-way code derived from your subscription's transaction id</strong>, so that a
+    block or a ban applies to all of your devices and your votes are counted once per person.
+    It cannot be turned back into your Apple ID or name.</li>
+  </ul>
+  <p>To confirm you have an active subscription, the server sends that transaction id to Apple's
+  App Store Server API; Apple returns whether the subscription is active. Nuralis never receives
+  your payment details. Like any web host, Cloudflare processes network addresses to deliver
+  requests; Nuralis does not store them.</p>
+  <p><strong>Deleting it.</strong> In the marketplace, open the More menu and choose "Delete my
+  shared data". That removes your shared looks, votes, tries, reports, blocks and device records
+  from the server, on all of your devices. You can also delete a single look of yours from its menu,
+  or email <a href="mailto:planetbind+nuralis@gmail.com">planetbind+nuralis@gmail.com</a>. Looks you
+  already got stay in your own Your scenes on your device.</p>
+  <p><strong>Safety.</strong> Names are screened automatically. Anyone can report a look or block a
+  creator in the app, and we review reports within 24 hours and remove looks that break the
+  community rules.</p>
+
   <h2>Subscriptions</h2>
   <p>Nuralis Premium is an auto-renewable subscription processed entirely by Apple through
   StoreKit. Nuralis never receives your payment details — Apple handles billing, and your
-  subscription entitlement is verified on-device. No account with Nuralis is created or required to
-  subscribe.</p>
+  subscription entitlement is verified on-device. If you use the looks marketplace, the server also
+  checks with Apple that your subscription is active, as described above. No account with Nuralis is
+  created or required to subscribe.</p>
 
   <h2>Children's privacy</h2>
-  <p>Nuralis does not knowingly collect information from anyone, including children. The one
-  optional data flow described above (usage analytics) is off by default and must be deliberately
-  turned on in Settings.</p>
+  <p>Nuralis does not knowingly collect information from anyone, including children. The two
+  optional data flows described above are off unless you act: usage analytics must be turned on in
+  Settings, and the looks marketplace is only for Premium members who open it and agree to the
+  community rules.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy ever changes — for example, if a future version adds an optional cloud sync
+  <p>If this policy ever changes — for example, if a future version adds another optional online
   feature — this page will be updated first, and any new data collection will be clearly disclosed
   and, where required, opt-in.</p>
 

@@ -331,3 +331,9 @@ section { scroll-margin-top: 80px; }
   .mosaic { transform: none; }
   .mosaic img:nth-child(2), .mosaic img:nth-child(4) { transform: none; }
 }
+
+/* Nuralis invite page */
+.invite { text-align: center; }
+.invite img { max-width: 100%; height: auto; border-radius: 18px; }
+.invite .btn { margin-top: 0.5rem; }
+.doc.invite .btn-primary, .doc.invite .btn-primary:hover { color: #05060d; text-decoration: none; }
